@@ -1,0 +1,1141 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="IMAGENES/nba-logo-transparent.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+  <title>NBA data</title>
+</head>
+<style>
+  .container-fluid {
+    max-width: 80%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    overflow-x: hidden;
+  }
+
+  .card {
+    box-shadow: 0px 0px 10px rgba(183, 87, 87, 0.3);
+
+  }
+
+  .card-title {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .card-text {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .carousel-inner .carousel-item img {
+    height: 550px !important;
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+  }
+
+  img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  #titulo{
+  text-align: center !important;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.Intro{
+  font-size:20px;
+}
+
+  iframe {
+    width: 100%;
+    height: 30vh;
+    border-radius: 25px;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .social {
+    color: #fff;
+    /* Color del texto */
+  }
+
+  .social i {
+    color: #ff0000;
+    /* Color de fondo de los iconos */
+  }
+
+  #footer a {
+    color: white;
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    .container-fluid {
+      max-width: 100%;
+      overflow-x: hidden;
+      margin: 2px;
+    }
+
+    .carousel-inner .carousel-item img {
+      height: 200px !important;
+      width: 100%;
+      object-fit: fill;
+      object-position: center;
+    }
+
+    h1 {
+      font-size: 25px;
+    }
+    .Intro{
+  font-size:18px;
+}
+
+    .card {
+      margin: 2px;
+      width: 100%;
+
+    }
+
+    .card-body {
+      width: 100%;
+    }
+
+    .card-title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .card-text {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+
+    iframe {
+      width: 100%;
+      height: 30vh;
+      border-radius: 15px;
+    }
+
+    img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    #footer a {
+      color: white;
+    }
+  }
+</style>
+
+<body>
+  <!--Main Container-->
+  <div class="container-fluid">
+    <!--Header-->
+    <header>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">NBA</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="principal.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Sobre_mi.html">Sobre Mi</a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Fin header-->
+    <!--Main- CARROUSEL-->
+    <main id="main">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block rounded" src="IMAGENES/16815468708365.jpg" alt="NBA 1">
+          </div>
+          <div class="carousel-item ">
+            <img class="d-block rounded" src="IMAGENES/ALL STAR.jpg" alt="NBA 2">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block rounded" src="IMAGENES/LAKERS VS MENFIS.jpg" alt="NBA 3">
+          </div>
+          <div class="carousel-item ">
+            <img class="d-block rounded" src="IMAGENES/EQUIPOS.png" alt="NBA 4">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block rounded" src="https://cdn.nba.com/manage/2023/04/Image-from-iOS-784x441.jpg" alt="NBA 5">
+          </div>
+          <div class="carousel-item ">
+            <img class="d-block rounded" src="IMAGENES/warriors-Kings-nba-betting-picks-predictions-betmgm.jpg" alt="NBA 6">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block rounded" src="IMAGENES/NBA IMAGEN.jpg" alt="NBA 7">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block  rounded" src="IMAGENES/nba-balon-21-22-diamante.jpeg" alt="NBA 8">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block rounded" src="IMAGENES/BUKS VS HEAT.jpg" alt="NBA 9">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block rounded" src="IMAGENES/JUGADORES.jpg" alt="NBA 10">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block rounded" src="IMAGENES/nba-logos.gif" alt="NBA 11">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block  rounded" src="IMAGENES/WIN.jpg" alt="NBA 12">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block rounded" src="IMAGENES/nba-warriors-campeones-2022.jpeg" alt="NBA 13">
+          </div>
+
+
+        </div>
+      </div>
+    </main>
+    <br>
+    <!--Fin Main-->
+    <div class="mt-2 m-1 text-dark rounded text-center p-1">
+      <h1>La NBA:</h1>
+      <p class="Intro"> La National Basketball Association, más conocida simplemente por sus siglas NBA, 
+        es una liga privada de baloncesto profesional que se disputa en Estados Unidos desde 1949, 
+        cuando se fusionaron las ligas profesionales National Basketball League y la Basketball Association of America.
+      </p>
+
+      <p class="Intro"> Fue al término de la Segunda Guerra Mundial cuando un grupo de hombres en su mayoría propietarios de algunos de los recintos deportivos de diferentes ciudades estadounidenses,
+        se reunieron en el Madison Square Garden de Nueva York con el fin de buscar alternativas para llenar dichos pabellones con algo más que hockey sobre hielo y boxeo, los cuales atraían mucho público, 
+        pero que no alcanzaban a llenar sus aforos. Pensando en algo totalmente distinto que fuera capaz de completar el calendario, además de ofrecer a la población americana un nuevo entretenimiento, 
+        vieron en el baloncesto el evento ideal para conseguir sus objetivos. 
+        Es así como el 6 de junio de 1946 se firmó el nacimiento de lo que, con el paso del tiempo, 
+        se convirtió en una de las ligas deportivas más seguidas en todo el mundo, la Basketball Association of America (BAA), que años más tarde pasó a denominarse NBA. </p>
+      <p>
+        El primer dirigente o comisionado de la liga fue Maurice Podoloff, quien además era el presidente de la National Hockey League (NHL). 
+        Once ciudades fueron las establecidas de acoger a un equipo que las representase, siendo esencialmente ciudades ubicadas en la costa Este de los Estados Unidos: 
+        Nueva York, Chicago, Boston, Providence, Toronto, Cleveland, San Luis, Washington D. C., Detroit, Pittsburgh y Philadelphia.
+      </p>
+      <p class="Intro">
+        Desde la temporada 2004-05 está conformada por 30 equipos o franquicias divididos en dos conferencias,
+        ​la Este, y la Oeste, las cuales a su vez se encuentran divididas en tres divisiones de cinco equipos cada una.</p>
+        
+        <h1>Equipos actuales</h1>
+
+      </div>
+
+      <!--Galeria Grupo Card #1- 1Ero-->
+      <h3 class="mb-3 pb-3 text-center">Conferencia Este</h3>
+      <div class="card-group">
+        <div class="card m-1 p-2">
+          <img class="card-img-top" src="IMAGENES/boston.png"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Boston Celtics</h5>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+  
+        <div class="card m-1 p-2">
+          <img class="card-img-top" src="IMAGENES/bucks.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Milwaukee Bucks</h5>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+  
+        <div class="card m-1 p-2">
+          <img class="card-img-top" src="IMAGENES/bulls.png"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Chicago Bulls</h5>
+           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+     <!--Galeria Grupo Card #2 -->
+        <div class="card-group">
+          <div class="card m-1 p-2">
+            <img class="card-img-top" src="IMAGENES/cavs.png"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Cleveland Cavaliers</h5>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card m-1 p-2">
+            <img class="card-img-top"
+              src="IMAGENES/filadelfia.png"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Philadelphia 76ers</h5>
+             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card m-1 p-2">
+            <img class="card-img-top" src="IMAGENES/hawks.png"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Atlanta Hawks</h5>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+     <!--Galeria Grupo Card #3- -->
+          <div class="card-group">
+            <div class="card m-1 p-2">
+              <img class="card-img-top" src="IMAGENES/heat.png"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Miami Heat</h5>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card m-1 p-2">
+              <img class="card-img-top" src="IMAGENES/hornets.png"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Charlotte Hornets</h5>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card m-1 p-2">
+              <img class="card-img-top" src="IMAGENES/magic.png"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Orlando Magic</h5>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+  
+     <div>
+     <!--Galeria Grupo Card #4--->
+              <div class="card-group">
+          <div class="card m-1 p-2">
+            <img class="card-img-top" src="IMAGENES/nets.png"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Brookyn Nets</h5>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card m-1 p-2">
+            <img class="card-img-top"
+              src="IMAGENES/newyork knicks.png"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Newyork Knicks</h5>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card m-1 p-2">
+            <img class="card-img-top" src="IMAGENES/pacers.png"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Indiana Pacers</h5>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          </div>
+  
+         
+  <!--Galeria Grupo Card #6--->
+            <div class="card-group">
+              <div class="card m-1 p-2">
+                <img class="card-img-top"
+                  src="IMAGENES/pinstons.png"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Detroit Pistons</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card m-1 p-2">
+                <img class="card-img-top"
+                  src="IMAGENES/wizards.png"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Washington Wizards</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card m-1 p-2">
+                <img class="card-img-top"
+                  src="IMAGENES/toronto raptors.png"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Toronto Raptors</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+
+            </div>
+
+            <div>
+
+            <!--Galeria Grupo Card #1- 1Ero-->
+            <h3 class="mb-3 pb-3 text-center">Conferencia Oeste</h3>
+            <div class="card-group">
+              <div class="card m-1 p-2">
+                <img class="card-img-top" src="IMAGENES/clipers.png"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Los Angeles Clippers</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+        
+              <div class="card m-1 p-2">
+                <img class="card-img-top" src="IMAGENES/warriors.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Golden State Warriors</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+        
+              <div class="card m-1 p-2">
+                <img class="card-img-top" src="IMAGENES/lakers.png"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Los Angeles Lakers</h5>
+                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+           <!--Galeria Grupo Card #2 -->
+              <div class="card-group">
+                <div class="card m-1 p-2">
+                  <img class="card-img-top" src="IMAGENES/dallas.png"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Dallas Mavericks</h5>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card m-1 p-2">
+                  <img class="card-img-top"
+                    src="IMAGENES/suns.png"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Phoenix Suns</h5>
+                   <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card m-1 p-2">
+                  <img class="card-img-top" src="IMAGENES/pelicans.png"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">New Orleans Pelicans</h5>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+           <!--Galeria Grupo Card #3- -->
+                <div class="card-group">
+                  <div class="card m-1 p-2">
+                    <img class="card-img-top" src="IMAGENES/denver.png"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Denver Nuggets</h5>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                  <div class="card m-1 p-2">
+                    <img class="card-img-top" src="IMAGENES/minnesota.png"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Minnesota Timberwolves</h5>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                  <div class="card m-1 p-2">
+                    <img class="card-img-top" src="IMAGENES/menfis.png"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Memphis Grizzlies</h5>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+        
+           <!--Galeria Grupo Card #4--->
+                    <div class="card-group">
+                <div class="card m-1 p-2">
+                  <img class="card-img-top" src="IMAGENES/rokets.png"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Houston Rockets</h5>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card m-1 p-2">
+                  <img class="card-img-top"
+                    src="IMAGENES/spurs.png"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">San Antonio Spurs</h5>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card m-1 p-2">
+                  <img class="card-img-top" src="IMAGENES/okc.png"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Oklahoma City Thunder</h5>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+        
+               
+        <!--Galeria Grupo Card #6--->
+                  <div class="card-group">
+                    <div class="card m-1 p-2">
+                      <img class="card-img-top"
+                        src="IMAGENES/portla.png"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Portland Trail Blazers</h5>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card m-1 p-2">
+                      <img class="card-img-top"
+                        src="IMAGENES/kings.png"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Sacramento Kings</h5>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card m-1 p-2">
+                      <img class="card-img-top"
+                        src="IMAGENES/utah jazz.png"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Utah Jazz</h5>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+
+    <div>
+
+    <!--Galeria Grupo Card #1- 1Ero-->
+    <h3 class="mb-3 pb-3 text-center">Nba: Top jugadores favoritos</h3>
+    <div class="card-group">
+      <div class="card m-1 p-2">
+        <img class="card-img-top" src="IMAGENES/giannis-antetokounmpo-milwaukee-bucks.gif"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Giannis Antetokoumpo</h5>
+          <p class="card-text">Giannis Ougko Antetokounmpo es un baloncestista griego-nigeriano que pertenece a la plantilla de los Milwaukee Bucks de la NBA. 
+            Con 2,13 metros de altura, juega en la posición de ala-pívot, 
+            pero debido a su gran versatilidad es capaz de jugar tanto de alero como de pívot.</p>
+            <center><strong><p>Carrera deportiva</p></strong></center>
+              <strong>Deporte:</strong>	Baloncesto
+             <p><strong>Draft de la NBA:</strong>	1.ª ronda (puesto 15), 2013 por Milwaukee Bucks</p>
+             <p><strong>Club:</strong>	Milwaukee Bucks</p>
+              <p><strong>Posicion:</strong> Alero/Ala-pivot</p>
+              <p><strong>Dorsal(es):</strong>	34</p>
+              <p><strong>Selección nacional:</strong>	Grecia</p>
+              <p><strong>Trayectoria:</strong> Filathlitikos B.C. (2011-2013) y Milwaukee Bucks (2013-presente)</p>
+              <p><strong>Liga:</strong>	NBA</p></p>
+              <center><strong><p>Estadisticas de carrera</p></strong></center>
+              <p><strong>Puntos:</strong> 22.6pts <strong>Rebotes:</strong> 9.6reb <strong>Asistencias:</strong> 4.7ast</p>
+              <center><p><strong>Titulos</strong></p></center>
+              <p><strong>anillos/Campeonatos:</strong>	1</p>
+              <p><strong>MVPS:</strong>	2</p>
+              <p><strong>ROTY:</strong>	0</p>
+              <p><strong>DPOTY:</strong>	1</p>
+              <p><strong>FMVPS:</strong>	1</p>
+              <p><strong>All-Stars:</strong>	7</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+      <div class="card m-1 p-2">
+        <img class="card-img-top" src="IMAGENES/al horford.gif" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Al Horford</h5>
+          <p class="card-text">Alfred Joel Horford Reynoso (Puerto Plata, República Dominicana; 3 de junio de 1986), más conocido como Al Horford, 
+            es un baloncestista dominicano que actualmente pertenece a la plantilla de los Boston Celtics de la NBA. 
+            Con 2,06 metros de estatura, juega en las posiciones de ala-pívot y pívot. 
+            También juega para la selección nacional de baloncesto de la República Dominicana en las competiciones internacionales.</p>
+            <center><strong><p>Carrera deportiva</p></strong></center>
+            <strong>Deporte:</strong>	Baloncesto
+           <p><strong>Draft de la NBA:</strong>	1.ª ronda (puesto 3), 2007 por Atlanta Hawks</p>
+           <p><strong>Club:</strong>	Boston Celtics</p>
+            <p><strong>Posicion:</strong> Pivot/Ala-pivot</p>
+            <p><strong>Dorsal(es):</strong>	15,10 y 42</p>
+            <p><strong>Selección nacional:</strong>	República Dominicana</p>
+            <p><strong>Trayectoria:</strong> Atlanta Hawks (2007-2016), Boston Celtics (2016-2019), Philadelphia 76ers (2019-2020),Oklahoma City Thunder (2020-2021) y Boston Celtics (2021-presente)</p>
+            <p><strong>Liga:</strong>	NBA</p></p>
+            <center><strong><p>Estadisticas de carrera</p></strong></center>
+            <p><strong>Puntos:</strong> 13.7pts <strong>Rebotes:</strong> 8.2reb <strong>Asistencias:</strong> 3.3ast</p>
+            <center><p><strong>Titulos</strong></p></center>
+            <p><strong>anillos/Campeonatos:</strong>	0</p>
+            <p><strong>MVPS:</strong>	0</p>
+            <p><strong>ROTY:</strong>	0</p>
+            <p><strong>DPOTY:</strong>	0</p>
+            <p><strong>FMVPS:</strong>	0</p>
+            <p><strong>All-Stars:</strong>	5</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+      <div class="card m-1 p-2">
+        <img class="card-img-top" src="IMAGENES/chris duarte.gif"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Chris Duarte</h5>
+          <p class="card-text">Christopher Theoret "Chris" Duarte es un jugador de baloncesto dominicano que pertenece a la plantilla de los Indiana Pacers.​ Con 1,96 metros de altura, juega en la posición de escolta. Jugó baloncesto universitario para los Northwest Florida State Raiders y fue nombrado Jugador del Año de la NABC, NJCAA en 2019.</p>
+            <center><strong><p>Carrera deportiva</p></strong></center>
+            <strong>Deporte:</strong>	Baloncesto
+           <p><strong>Draft de la NBA:</strong>	1.ª ronda (puesto 13) 2021 por Indiana Pacers</p>
+           <p><strong>Club:</strong>	Indiana Pacers</p>
+            <p><strong>Posicion:</strong> Escolta/Alero</p>
+            <p><strong>Dorsal(es):</strong>	3</p>
+            <p><strong>Selección nacional:</strong>	Republica Dominicana</p>
+            <p><strong>Trayectoria:</strong> Indiana Pacers (2021-presente)</p>
+            <p><strong>Liga:</strong>	NBA</p></p>
+            <center><strong><p>Estadisticas de carrera</p></strong></center>
+            <p><strong>Puntos:</strong> 10.7pts <strong>Rebotes:</strong> 3.4reb <strong>Asistencias:</strong> 1.8ast</p>
+            <center><p><strong>Titulos</strong></p></center>
+            <p><strong>anillos/Campeonatos:</strong>	0</p>
+            <p><strong>MVPS:</strong>	0</p>
+            <p><strong>ROTY:</strong>	0</p>
+            <p><strong>DPOTY:</strong>	0</p>
+            <p><strong>FMVPS:</strong>	0</p>
+            <p><strong>All-Stars:</strong>	0</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+   <!--Galeria Grupo Card #2 -->
+      <div class="card-group">
+        <div class="card m-1 p-2">
+          <img class="card-img-top" src="IMAGENES/jayson tatum.gif"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Jayson Tatum</h5>
+            <p class="card-text">Jayson Christopher Tatum es un baloncestista estadounidense que juega en los Boston Celtics de la NBA. Con 2,03 metros de estatura juega en la posición de alero.</p>
+              <center><strong><p>Carrera deportiva</p></strong></center>
+              <strong>Deporte:</strong>	Baloncesto
+             <p><strong>Draft de la NBA:</strong>	1.ª ronda (puesto 3), 2017 por Boston Celtics</p>
+             <p><strong>Club:</strong>	Boston Celtics</p>
+              <p><strong>Posicion:</strong> Alero</p>
+              <p><strong>Dorsal(es):</strong>	0</p>
+              <p><strong>Selección nacional:</strong>	Estados Unidos</p>
+              <p><strong>Trayectoria:</strong> Boston Celtics (2017-presente)</p>
+              <p><strong>Liga:</strong>	NBA</p></p>
+              <center><strong><p>Estadisticas de carrera</p></strong></center>
+              <p><strong>Puntos:</strong> 11.6pts <strong>Rebotes:</strong> 3.0reb <strong>Asistencias:</strong> 5.0ast</p>
+              <center><p><strong>Titulos</strong></p></center>
+            <p><strong>anillos/Campeonatos:</strong>	0</p>
+            <p><strong>MVPS:</strong>	0</p>
+            <p><strong>ROTY:</strong>	0</p>
+            <p><strong>DPOTY:</strong>	0</p>
+            <p><strong>FMVPS:</strong>	0</p>
+            <p><strong>All-Stars:</strong>	3</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card m-1 p-2">
+          <img class="card-img-top"
+            src="IMAGENES/joel embiid.gif"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Joel Embiid</h5>
+            <p class="card-text">Joel Hans Embiid es un jugador de baloncesto camerunés nacionalizado francés​ y estadounidense​ que pertenece a la plantilla de los Philadelphia 76ers. Con 2,13 metros de estatura, juega en la posición de pívot.</p>
+              <center><strong><p>Carrera deportiva</p></strong></center>
+              <strong>Deporte:</strong>	Baloncesto
+             <p><strong>Draft de la NBA:</strong>	1.ª ronda (puesto 3), 2014 por Philadelphia 76ers</p>
+             <p><strong>Club:</strong> Philadelphia 76ers</p>
+              <p><strong>Posicion:</strong> Pivot</p>
+              <p><strong>Dorsal(es):</strong>	21</p>
+              <p><strong>Selección nacional:</strong>	Francia</p>
+              <p><strong>Trayectoria:</strong> Philadelphia 76ers (2014-presente)</p>
+              <p><strong>Liga:</strong>	NBA</p></p>
+              <center><strong><p>Estadisticas de carrera</p></strong></center>
+              <p><strong>Puntos:</strong> 22.6pts <strong>Rebotes:</strong> 9.6reb <strong>Asistencias:</strong> 4.7ast</p>
+              <center><p><strong>Titulos</strong></p></center>
+              <p><strong>anillos/Campeonatos:</strong>	0</p>
+              <p><strong>MVPS:</strong>	0</p>
+              <p><strong>ROTY:</strong>	0</p>
+              <p><strong>DPOTY:</strong>	0</p>
+              <p><strong>FMVPS:</strong>	0</p>
+              <p><strong>All-Stars:</strong>	5</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card m-1 p-2">
+          <img class="card-img-top" src="IMAGENES/karl-anthony-towns-kat.gif"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Karl Anthony.towns</h5>
+            <p class="card-text">Karl-Anthony Towns Cruz es un jugador de baloncesto dominicano-estadounidense que pertenece a la plantilla de los Minnesota Timberwolves de la NBA. Con 2,11 metros de estatura, juega en la posición de pívot. Towns jugó tres temporadas en el instituto St.</p>
+              <center><strong><p>Carrera deportiva</p></strong></center>
+              <strong>Deporte:</strong>	Baloncesto
+             <p><strong>Draft de la NBA:</strong>	1.ª ronda (puesto 1), 2015 por Minnesota Timberwolves</p>
+             <p><strong>Club:</strong>	Minnesota Timberwolves</p>
+              <p><strong>Posicion:</strong> Pivot/Ala-pivot</p>
+              <p><strong>Dorsal(es):</strong>	32</p>
+              <p><strong>Selección nacional:</strong>	Republica Dominicana</p>
+              <p><strong>Trayectoria:</strong> Minnesota Timberwolves (2015-presente)</p>
+              <p><strong>Liga:</strong>	NBA</p></p>
+              <center><strong><p>Estadisticas de carrera</p></strong></center>
+              <p><strong>Puntos:</strong> 12.3pts <strong>Rebotes:</strong> 6.3reb <strong>Asistencias:</strong> 1.3ast</p>
+              <center><p><strong>Titulos</strong></p></center>
+              <p><strong>anillos/Campeonatos:</strong>	0</p>
+              <p><strong>MVPS:</strong>	0</p>
+              <p><strong>ROTY:</strong>	0</p>
+              <p><strong>DPOTY:</strong>	0</p>
+              <p><strong>FMVPS:</strong>	0</p>
+              <p><strong>All-Stars:</strong>	3</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+   <!--Galeria Grupo Card #3- -->
+        <div class="card-group">
+          <div class="card m-1 p-2">
+            <img class="card-img-top" src="IMAGENES/stephen-curry-rings.gif"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Stephen Curry</h5>
+              <p class="card-text">Wardell Stephen Curry II, más conocido como Stephen Curry, es un jugador estadounidense de baloncesto que pertenece a la plantilla de los Golden State Warriors de la NBA. Con 1,88 metros de altura, juega en la posición de base. Curry es el mejor tirador de la historia de baloncesto.</p>
+                <center><strong><p>Carrera deportiva</p></strong></center>
+                <strong>Deporte:</strong>	Baloncesto
+               <p><strong>Draft de la NBA:</strong>	1.ª ronda (puesto 7), 2009 por Golden State Warriors</p>
+               <p><strong>Club:</strong>	Golden State Warriors</p>
+                <p><strong>Posicion:</strong> Base/Escolta</p>
+                <p><strong>Dorsal(es):</strong>	30</p>
+                <p><strong>Selección nacional:</strong>	Estados Unidos</p>
+                <p><strong>Trayectoria:</strong> Golden State Warriors (2009-presente)</p>
+                <p><strong>Liga:</strong>	NBA</p></p>
+                <center><strong><p>Estadisticas de carrera</p></strong></center>
+                <p><strong>Puntos:</strong> 24.3pts <strong>Rebotes:</strong> 4.6reb <strong>Asistencias:</strong> 6.5ast</p>
+                <center><p><strong>Titulos</strong></p></center>
+                <p><strong>anillos/Campeonatos:</strong>	4</p>
+                <p><strong>MVPS:</strong>	2 unanimes</p>
+                <p><strong>ROTY:</strong>	0</p>
+                <p><strong>DPOTY:</strong>	0</p>
+                <p><strong>FMVPS:</strong>	1</p>
+                <p><strong>All-Stars:</strong>	8</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card m-1 p-2">
+            <img class="card-img-top" src="IMAGENES/lebron james.gif"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Lebron James</h5>
+              <p class="card-text">LeBron Raymone James Sr. es un jugador de baloncesto estadounidense que actualmente pertenece a la plantilla de Los Angeles Lakers de la NBA. Con 2,06 metros de estatura, su posición es la de alero, pero su talento, versatilidad y poderío físico le permiten jugar tanto de base como de ala-pívot.</p>
+                <center><strong><p>Carrera deportiva</p></strong></center>
+                <strong>Deporte:</strong>	Baloncesto
+               <p><strong>Draft de la NBA:</strong>	1.ª ronda (puesto 1), 2013 por Cleveland Cavaliers</p>
+               <p><strong>Club:</strong>	Los Angeles Lakers</p>
+                <p><strong>Posicion:</strong> Alero/Ala-pivot</p>
+                <p><strong>Dorsal(es):</strong>	23, 6 y 9</p>
+                <p><strong>Selección nacional:</strong>	Estados Unidos</p>
+                <p><strong>Trayectoria:</strong> Cleveland Cavaliers (2003-2010), Miami Heat (2010-2014), Cleveland Cavaliers (2014-2018) y Los Angeles Lakers (2018-presente)</p>
+                <p><strong>Liga:</strong>	NBA</p></p>
+                <center><strong><p>Estadisticas de carrera</p></strong></center>
+                <p><strong>Puntos:</strong> 27.1pts <strong>Rebotes:</strong> 7.5reb <strong>Asistencias:</strong> 7.4ast</p>
+                <center><p><strong>Titulos</strong></p></center>
+                <p><strong>anillos/Campeonatos:</strong>	4</p>
+                <p><strong>MVPS:</strong>	4</p>
+                <p><strong>ROTY:</strong>	1</p>
+                <p><strong>DPOTY:</strong>	0</p>
+                <p><strong>FMVPS:</strong>	4</p>
+                <p><strong>All-Stars:</strong>	19</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card m-1 p-2">
+            <img class="card-img-top" src="IMAGENES/Lukadoncicmate.gif"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Luka Doncic</h5>
+              <p class="card-text">Luka Dončić es un jugador de baloncesto esloveno, que pertenece a la plantilla de los Dallas Mavericks de la NBA. Con 2,01 metros de altura juega en la posición de base, pero puede jugar tanto de escolta como de alero.​​</p>
+                <center><strong><p>Carrera deportiva</p></strong></center>
+                <strong>Deporte:</strong>	Baloncesto
+               <p><strong>Draft de la NBA:</strong>	1.ª ronda (puesto 3), 2018 por Atlanta Hawks</p>
+               <p><strong>Club:</strong>	Dallas Mavericks</p>
+                <p><strong>Posicion:</strong> Base/Escolta</p>
+                <p><strong>Dorsal(es):</strong>	77 y 7</p>
+                <p><strong>Selección nacional:</strong>	Eslovenia</p>
+                <p><strong>Trayectoria:</strong> Real Madrid (2015-2018) y Dallas Mavericks (2018-presente)</p>
+                <p><strong>Liga:</strong>	NBA</p></p>
+                <center><strong><p>Estadisticas de carrera</p></strong></center>
+                <p><strong>Puntos:</strong> 27.6pts <strong>Rebotes:</strong> 8.6reb <strong>Asistencias:</strong> 8.0ast</p>
+                <center><p><strong>Titulos</strong></p></center>
+                <p><strong>anillos/Campeonatos:</strong>	0</p>
+                <p><strong>MVPS:</strong>	0</p>
+                <p><strong>ROTY:</strong>	1</p>
+                <p><strong>DPOTY:</strong>	0</p>
+                <p><strong>FMVPS:</strong>	0</p>
+                <p><strong>All-Stars:</strong>	4</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+
+
+
+          <div>
+
+
+             <!--Galeria Grupo Card #1- 1Ero-->
+    <h3 class="mb-3 pb-3 text-center">Nba: Top jugadores historicos</h3>
+    <div class="card-group">
+      <div class="card m-1 p-2">
+        <img class="card-img-top" src="IMAGENES/jordan_michael_1.jpg"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Michael Jordan</h5>
+          <p class="card-text">Michael Jeffrey Jordan es un exjugador de baloncesto estadounidense. Con 1,98 metros de altura, jugaba en la posición de escolta. Es considerado por la mayoría de aficionados y especialistas como el mejor jugador de baloncesto de todos los tiempos.​​ </p>
+            <center><strong><p>Carrera deportiva</p></strong></center>
+              <strong>Deporte:</strong>	Baloncesto
+             <p><strong>Draft de la NBA:</strong>	1.ª ronda (puesto 3), 1984 por Chicago Bulls</p>
+             <p><strong>Club:</strong> Retirado</p>
+              <p><strong>Posicion:</strong> Escolta/Alero</p>
+              <p><strong>Dorsal(es):</strong>	23, 9, 45 y 12</p>
+              <p><strong>Selección nacional:</strong>	Estados Unidos</p>
+              <p><strong>Trayectoria:</strong> Chicago Bulls (1984-1993, 1995-1998) y Washington Wizards (2001-2003)</p>
+              <p><strong>Liga:</strong>	NBA</p></p>
+              <center><strong><p>Estadisticas de carrera</p></strong></center>
+              <p><strong>Puntos:</strong> 30.1pts <strong>Rebotes:</strong> 6.2reb <strong>Asistencias:</strong> 5.3ast</p>
+              <center><p><strong>Titulos</strong></p></center>
+              <p><strong>anillos/Campeonatos:</strong>	6</p>
+              <p><strong>MVPS:</strong>	5</p>
+              <p><strong>ROTY:</strong>	1</p>
+              <p><strong>DPOTY:</strong>	1</p>
+              <p><strong>FMVPS:</strong>	6</p>
+              <p><strong>All-Stars:</strong>	13</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+      <div class="card m-1 p-2">
+        <img class="card-img-top" src="IMAGENES/lebron james.gif" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Lebron James</h5>
+          <p class="card-text">LeBron Raymone James Sr. es un jugador de baloncesto estadounidense que actualmente pertenece a la plantilla de Los Angeles Lakers de la NBA. Con 2,06 metros de estatura, su posición es la de alero, pero su talento, versatilidad y poderío físico le permiten jugar tanto de base como de ala-pívot.</p>
+          <center><strong><p>Carrera deportiva</p></strong></center>
+          <strong>Deporte:</strong>	Baloncesto
+         <p><strong>Draft de la NBA:</strong>	1.ª ronda (puesto 1), 2013 por Cleveland Cavaliers</p>
+         <p><strong>Club:</strong>	Los Angeles Lakers</p>
+          <p><strong>Posicion:</strong> Alero/Ala-pivot</p>
+          <p><strong>Dorsal(es):</strong>	23, 6 y 9</p>
+          <p><strong>Selección nacional:</strong>	Estados Unidos</p>
+          <p><strong>Trayectoria:</strong> Cleveland Cavaliers (2003-2010), Miami Heat (2010-2014), Cleveland Cavaliers (2014-2018) y Los Angeles Lakers (2018-presente)</p>
+          <p><strong>Liga:</strong>	NBA</p></p>
+          <center><strong><p>Estadisticas de carrera</p></strong></center>
+          <p><strong>Puntos:</strong> 27.1pts <strong>Rebotes:</strong> 7.5reb <strong>Asistencias:</strong> 7.4ast</p>
+          <center><p><strong>Titulos</strong></p></center>
+          <p><strong>anillos/Campeonatos:</strong>	4</p>
+          <p><strong>MVPS:</strong>	4</p>
+          <p><strong>ROTY:</strong>	1</p>
+          <p><strong>DPOTY:</strong>	0</p>
+          <p><strong>FMVPS:</strong>	4</p>
+          <p><strong>All-Stars:</strong>	19</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+      <div class="card m-1 p-2">
+        <img class="card-img-top" src="IMAGENES/kareem.webp"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Kareem Abdul-Jabbar</h5>
+          <p class="card-text">Kareem Abdul-Jabbar, en idioma árabe كريم عبدالجبار, nacido con el nombre de Ferdinand Lewis Alcindor Jr., es un exbaloncestista estadounidense que militó en Milwaukee Bucks y Los Angeles Lakers de la NBA durante 20 temporadas, desde 1969-70 a 1988-89.</p>
+            <center><strong><p>Carrera deportiva</p></strong></center>
+            <strong>Deporte:</strong>	Baloncesto
+           <p><strong>Draft de la NBA:</strong>	1.ª ronda (puesto 1), 1969 por Milwaukee Bucks</p>
+           <p><strong>Club:</strong>	Retirado</p>
+            <p><strong>Posicion:</strong> Pivot</p>
+            <p><strong>Dorsal(es):</strong>	33</p>
+            <p><strong>Selección nacional:</strong>	None</p>
+            <p><strong>Trayectoria:</strong> Milwaukee Bucks (1969-1975) y Los Angeles Lakers (1975-1989)</p>
+            <p><strong>Liga:</strong>	NBA</p></p>
+            <center><strong><p>Estadisticas de carrera</p></strong></center>
+            <p><strong>Puntos:</strong> 24.6pts <strong>Rebotes:</strong> 11.2reb <strong>Asistencias:</strong> 3.6ast</p>
+            <center><p><strong>Titulos</strong></p></center>
+            <p><strong>anillos/Campeonatos:</strong>	6</p>
+            <p><strong>MVPS:</strong>	6</p>
+            <p><strong>ROTY:</strong>	1</p>
+            <p><strong>DPOTY:</strong>	0</p>
+            <p><strong>FMVPS:</strong>	2</p>
+            <p><strong>All-Stars:</strong>	19</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+   <!--Galeria Grupo Card #2 -->
+      <div class="card-group">
+        <div class="card m-1 p-2">
+          <img class="card-img-top" src="IMAGENES/magic jhonson.jpg"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Magic Jhonson</h5>
+            <p class="card-text">Earvin "Magic" Johnson, Jr. es un exbaloncestista estadounidense, considerado uno de los mejores de la historia.​ Militó en Los Angeles Lakers de la NBA desde 1979 hasta 1991, tiempo en que publicó que había contraído el VIH, abandonando el deporte profesional para combatirlo, salvo por un breve período en 1996.</p>
+              <center><strong><p>Carrera deportiva</p></strong></center>
+              <strong>Deporte:</strong>	Baloncesto
+             <p><strong>Draft de la NBA:</strong>	1.ª ronda (puesto 1), 1979 por Los Angeles Lakers</p>
+             <p><strong>Club:</strong>	Retirado</p>
+              <p><strong>Posicion:</strong> Base</p>
+              <p><strong>Dorsal(es):</strong>	32 y 15</p>
+              <p><strong>Selección nacional:</strong>	Estados Unidos</p>
+              <p><strong>Trayectoria:</strong> Los Angeles Lakers (1979-1991, 1996)</p>
+              <p><strong>Liga:</strong>	NBA</p></p>
+              <center><strong><p>Estadisticas de carrera</p></strong></center>
+              <p><strong>Puntos:</strong> 17.5pts <strong>Rebotes:</strong> 7.2reb <strong>Asistencias:</strong> 11.2ast</p>
+              <center><p><strong>Titulos</strong></p></center>
+            <p><strong>anillos/Campeonatos:</strong>	5</p>
+            <p><strong>MVPS:</strong>	3</p>
+            <p><strong>ROTY:</strong>	0</p>
+            <p><strong>DPOTY:</strong>	0</p>
+            <p><strong>FMVPS:</strong>	3</p>
+            <p><strong>All-Stars:</strong>	12</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card m-1 p-2">
+          <img class="card-img-top"
+            src="IMAGENES/kobe bryant.jpg"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Kobe Bryant</h5>
+            <p class="card-text">Kobe Bean Bryant ​fue un baloncestista estadounidense que jugaba en la posición de escolta. Disputó veinte temporadas en la NBA, todas ellas en Los Angeles Lakers. Hijo del también exjugador de baloncesto Joe Bryant, ​ está considerado como uno de los mejores baloncestistas de todos los tiempos.</p>
+              <center><strong><p>Carrera deportiva</p></strong></center>
+              <strong>Deporte:</strong>	Baloncesto
+             <p><strong>Draft de la NBA:</strong> 1.ª ronda (puesto 13), 1996 por Charlotte Hornets</p>
+             <p><strong>Club:</strong> Retirado</p>
+              <p><strong>Posicion:</strong> Escolta/Alero</p>
+              <p><strong>Dorsal(es):</strong>	8, 24 y 10</p>
+              <p><strong>Selección nacional:</strong>	Estados Unidos</p>
+              <p><strong>Trayectoria:</strong> Los Angeles Lakers (1996-2016)</p>
+              <p><strong>Liga:</strong>	NBA</p></p>
+              <center><strong><p>Estadisticas de carrera</p></strong></center>
+              <p><strong>Puntos:</strong> 25.0pts <strong>Rebotes:</strong> 5.2reb <strong>Asistencias:</strong> 4.7ast</p>
+              <center><p><strong>Titulos</strong></p></center>
+              <p><strong>anillos/Campeonatos:</strong>	5</p>
+              <p><strong>MVPS:</strong>	1</p>
+              <p><strong>ROTY:</strong>	0</p>
+              <p><strong>DPOTY:</strong>	0</p>
+              <p><strong>FMVPS:</strong>	2</p>
+              <p><strong>All-Stars:</strong>	18</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card m-1 p-2">
+          <img class="card-img-top" src="IMAGENES/shaq.jpg"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Shaquille O'Neal</h5>
+            <p class="card-text">Shaquille Rashaun O’Neal es un exjugador estadounidense de baloncesto, que se desempeñaba como pívot.​ Es considerado como uno de los jugadores más dominantes de la historia de la NBA</p>
+              <center><strong><p>Carrera deportiva</p></strong></center>
+              <strong>Deporte:</strong>	Baloncesto
+             <p><strong>Draft de la NBA:</strong>	1.ª ronda (puesto 1), 1992 por Orlando Magic</p>
+             <p><strong>Club:</strong>	Retirado</p>
+              <p><strong>Posicion:</strong> Alero/Ala-pivot</p>
+              <p><strong>Dorsal(es):</strong>	32</p>
+              <p><strong>Selección nacional:</strong>	Estados Unidos</p>
+              <p><strong>Trayectoria:</strong> Orlando Magic (1992-1996), Los Angeles Lakers (1996-2004), Miami Heat (2004-2008), Phoenix Suns (2008-2009), Cleveland Cavaliers (2009-2010) y Boston Celtics (2010-2011)</p>
+              <p><strong>Liga:</strong>	NBA</p></p>
+              <center><strong><p>Estadisticas de carrera</p></strong></center>
+              <p><strong>Puntos:</strong> 12.3pts <strong>Rebotes:</strong> 6.3reb <strong>Asistencias:</strong> 1.3ast</p>
+              <center><p><strong>Titulos</strong></p></center>
+              <p><strong>anillos/Campeonatos:</strong>	4</p>
+              <p><strong>MVPS:</strong>	1</p>
+              <p><strong>ROTY:</strong>	1</p>
+              <p><strong>DPOTY:</strong>	0</p>
+              <p><strong>FMVPS:</strong>	3</p>
+              <p><strong>All-Stars:</strong>	15</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+
+
+          </div>
+
+   <!--Galer
+          </div>
+        </div>
+
+       
+<!--Galeria Grupo 
+                  </div>
+                </div>
+      
+
+              <br><br>
+              <!--Fin Galeria-->
+  
+              <!--Galeria de Videos-->
+
+
+              <h3 id="titulo" class="text-center">NBA: jugadas, datos y mas.</h3>
+              <hr>
+
+              <div class="card-group">
+                <div class="card">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/8kdTo3tpJMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <div class="card-body">
+                    <h5 class="card-title">Top 100 mejores jugadas de la decada 10-20</h5>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/IxA5EGMITt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Top 100 mejores jugadas del 2022</h5>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/kENLoZkL17g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <div class="card-body">
+                    <h5 class="card-title">Todos lo MVPS desde 1955</h5>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+
+
+                <div class="card-group">
+                  <div class="card">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TR2sZqSa12s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="card-body">
+                      <h5 class="card-title">Mejor rivalidad de la historia</h5>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/a6bO0YMHZRQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="card-body">
+                      <h5 class="card-title">MENTALIDAD MAMBA-Discurso de motivación de Kobe Bryant</h5>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PjUcn44TIGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="card-body">
+                      <h5 class="card-title">Mejores Crossovers NBA</h5>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <hr />
+          </div>
+
+
+          <h3 id="titulo" class="text-center">Ver los partidos de la NBA en vivo</h3>
+          <hr>
+          <!-- Boton Ver Serie-->
+
+          <div class="w-100 ">
+
+            <!-- Boton Ver Serie-->
+            <div class="text-center center-block">
+
+              <a href="https://www.nba.com/watch/league-pass-stream?gclid=Cj0KCQjwi46iBhDyARIsAE3nVrbkua80CwH1oDqj2-L85EWcGIq2osU_A36eIOYGErIXF8GoNLAba7QaAjFIEALw_wcB&cid=nba:ilp:paid:sem:sa360:na:eg:acq:sub:dtc-acq:INT:G_RoLatAm_Primary_LeaguePass_SpanishLT_All:LP_Core_Exact:nba+league+pass:43700064898306007:&ef_id=Cj0KCQjwi46iBhDyARIsAE3nVrbkua80CwH1oDqj2-L85EWcGIq2osU_A36eIOYGErIXF8GoNLAba7QaAjFIEALw_wcB:G:s&s_kwcid=AL!5120!3!654559389346!e!!g!!nba%20league%20pass!13818861052!122409770" target="_blank"
+                class="btn btn-danger btn-lg btn-block" tabindex="-1" role="button" aria-disabled="true">Subscribete en NBA Leage Pass</a>
+
+            </div>
+            <br>
+
+            <!--Fin Boton Ver Serie-->
+
+
+            <!--Redes Sociales-->
+            <br>
+            <h3 class="text-center">Mis Redes Sociales</h3>
+            <hr />
+            <div class="text-center center-block">
+              <div class="social">
+                <a href="https://www.linkedin.com/in/jorge-arturo-sosa-940133266/" target="_blank"><i
+                    class="fa fa-linkedin-square fa-3x social"></i></a>
+                <a href="https://www.facebook.com/people/Sos-Jorge/100024567171974" target="_blank"><i
+                    class="fa fa-facebook-square fa-3x social"></i></a>
+                <a href="https://twitter.com/SaldarJa" target="_blank"><i
+                    class="fa fa-twitter-square fa-3x social"></i></a>
+                <a href="https://github.com/js3634" target="_blank"><i
+                    class="fa fa-github-square fa-3x social"></i></a>
+              </div>
+            
+            </div>
+            <hr />
+            <h4 class="text-center">Jorge Aturo Sosa<small>&copy; 2023. Todos los derechos reservados.</small></h4>
+            <!--Fin Redes Sociales-->
+
+            <!--Footer-->
+            <footer id="footer" class="pb-4 pt-4 bg-danger">
+              <div class="container">
+                <div class="row text-center">
+                  <div class=" col-12 col-lg">
+                    <a href="index.html">Home</a>
+                  </div>
+                  <div class="col-12 col-lg">
+                    <a href="sobremi.html">Sobre Mi</a>
+                  </div>
+
+                  <div class="col-12 col-lg">
+                    <a href="#">Contactos</a>
+                  </div>
+
+                </div>
+              </div>
+            </footer>
+            <!--Fin footer-->
+
+          </div>
+
+          <!--Main Container-->
+
+
+        </div>
+
+        <!-- Optional JavaScript -->
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+          crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+          integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+          crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js "
+          integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc "
+          crossorigin="anonymous "></script>
+
+
+</body>
+
+</html>
